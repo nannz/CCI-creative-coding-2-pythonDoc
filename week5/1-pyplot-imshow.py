@@ -1,6 +1,5 @@
 from matplotlib import pyplot as plt
 
-# We're gonna use numpy
 from matplotlib import pyplot as plt
 import numpy as np
 
@@ -20,5 +19,8 @@ my_array = np.random.random((10,10))
 # is such that it can't be shown properly given the size of the plot
 # you need to set the lower and upper limits with clim !!!
 
+
+plt.title('1 simple random grayscale',fontsize=20)
 plt.imshow(my_array,  cmap='gray', clim=(0,1))
+plt.savefig("1-pyplot-imshow.png")
 plt.show()

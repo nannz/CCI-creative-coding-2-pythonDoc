@@ -25,6 +25,8 @@ for i in range(240):
         if abs(centre-i) < size and abs(centre-j) < size:
             myImage[i,j]=1
 
+plt.title('3 draw shapes',fontsize=20)
 plt.imshow(myImage, interpolation="bilinear", clim=(0,1),cmap="gray")
+plt.savefig("3-draw-shapes.png")
 plt.show()
 
